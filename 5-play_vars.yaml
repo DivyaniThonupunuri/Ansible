@@ -8,5 +8,5 @@
   tasks:
     - name: Print Variables
       ansible.builtin.debug:
-        msg: "Hello {{ COURSE }} , Course duration is {{ DURATION }} , trainer of the course is {{ Shiva }} "
+        msg: "Hello {{ COURSE }} , Course duration is {{ DURATION }} , trainer of the course is {{ TRAINER }} "
   
