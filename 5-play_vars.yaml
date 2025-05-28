@@ -10,8 +10,7 @@
       ansible.builtin.debug:
         msg: "Hello {{ COURSE }} , Course duration is {{ DURATION }} , trainer of the course is {{ TRAINER }} "
 
-  tasks:
-  - name: Print Variables again 
-    ansible.builtin.debug:
-      msg: "Hello {{ COURSE }} , Course duration is {{ DURATION }} , trainer of the course is {{ TRAINER }} "
+    - name: Print Variables again 
+      ansible.builtin.debug:
+        msg: "Hello {{ COURSE }} , Course duration is {{ DURATION }} , trainer of the course is {{ TRAINER }} "
   
