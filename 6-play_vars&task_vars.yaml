@@ -19,7 +19,7 @@
       msg: " Hello {{ COURSE }} , duration of course is {{ DURATION }} ,course is taught by {{ TRAINER }} "
 
   - name: Task variables again
-  vars:
-    COURSE: Ansible
-  ansible.builtin.debug:
-    msg: " Hello {{ COURSE }} , duration of course is {{ DURATION }} ,course is taught by {{ TRAINER }} "
+    vars:
+      COURSE: Ansible
+    ansible.builtin.debug:
+      msg: " Hello {{ COURSE }} , duration of course is {{ DURATION }} ,course is taught by {{ TRAINER }} "
