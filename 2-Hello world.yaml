@@ -1,0 +1,7 @@
+- name: Hello World
+  hosts: local
+  connection: local #avoid to enter username and password in command line
+  tasks:
+  - name: HELLO WORLD ..!
+    ansible.builtin.debug:
+      msg: HELLO... Welcome to the world of ansible
