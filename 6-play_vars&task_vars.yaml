@@ -10,6 +10,8 @@
     ansible.builtin.debug:
       msg: " Hello {{ COURSE }} , duration of course is {{ DURATION }} ,course is taught by {{ TRAINER }} "
 
+#variables declared inside the task
+
   - name: Task variables
     vars:
       COURSE: DevSecOps with aws 
