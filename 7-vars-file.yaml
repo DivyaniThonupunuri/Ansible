@@ -4,6 +4,6 @@
   vars:
   - course.yaml
   tasks:
-    - name: calling variables from course.yaml
-      ansible.builtin.debug:
-        msg: " course name is{{ COURSE }}, duration of course  {{ DURATION }} and trainer is {{ TRAINER }} {{ GREETING }} "
+  - name: calling variables from course.yaml
+    ansible.builtin.debug:
+      msg: " course name is{{ COURSE }}, duration of course  {{ DURATION }} and trainer is {{ TRAINER }} {{ GREETING }} "
