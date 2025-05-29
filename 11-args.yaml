@@ -1,0 +1,7 @@
+- name: passing argumennts as variables
+  hosts: local
+  connection: local
+  tasks: 
+  - name: dynamic argumennts
+    ansible.builtin.debug:
+      msg: "course name is {{ COURSE }}, duration of {{ DURATION }} and trainer is {{ TRAINER }} "
