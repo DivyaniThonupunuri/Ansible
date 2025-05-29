@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   tasks:
-    - name: calling variables from inventory as group
-      ansible.builtin.debug:
-        msg: "course name is {{ COURSE }}, duration of {{ DURATION }} and trainer is {{ TRAINER }} "
+  - name: calling variables from inventory as group
+    ansible.builtin.debug:
+      msg: "course name is {{ COURSE }}, duration of {{ DURATION }} and trainer is {{ TRAINER }} "
