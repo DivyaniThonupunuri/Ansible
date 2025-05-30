@@ -8,3 +8,11 @@
   - name: print the outcome
     ansible.builtin.debug: 
       msg: "{{ command_result }}"
+
+  - name: command ls output
+    ansible.builtin.command: "ls -lrt"
+    register: command_result
+
+  - name: print the outcome of ls 
+    ansible.builtin.debug:
+      msg: "{{ command_result }}"
