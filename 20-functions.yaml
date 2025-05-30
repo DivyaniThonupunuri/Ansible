@@ -1,0 +1,22 @@
+- name: functions
+  hosts: local
+  connection: local
+  vars: 
+    persons: "ramesh,suresh,ved ,viyaan"
+  tasks:
+  - name: "check defined variables" 
+    ansible:builtin.debug:
+      msg=  "Heloo, {{ person | default()'ramesh')}}"
+
+  - name: print names
+    ansible.builtin.debug:
+     msg= "Heloo , {{ person | split (',')}}" 
+  
+  - name: convert map into list
+    vars:
+      course:
+        name: ansible
+        duration: 10 HR
+        trainer: sivakumar
+    ansible.builtin.debug:
+      msg: "course info : {{ course | dict2items }}"
