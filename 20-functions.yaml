@@ -8,10 +8,10 @@
     ansible.builtin.debug:
      msg: "Heloo, {{ persons | default('ramesh')}}"
 
-  # - name: print names
-    # ansible.builtin.debug:
-    #  msg= "Heloo , {{ persons | split (',')}}" 
-  # 
+  - name: print names
+    ansible.builtin.debug:
+     msg= "Heloo , {{ persons | split (',')}}" 
+  
   # - name: convert map into list
     # vars:
       # course:
