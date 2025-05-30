@@ -6,11 +6,11 @@
   tasks:
   - name: "check defined variables" 
     ansible.builtin.debug:
-      msg=  "Heloo, {{ person | default()'ramesh')}}"
+      msg=  "Heloo, {{ persons | default()'ramesh')}}"
 
   - name: print names
     ansible.builtin.debug:
-     msg= "Heloo , {{ person | split (',')}}" 
+     msg= "Heloo , {{ persons | split (',')}}" 
   
   - name: convert map into list
     vars:
