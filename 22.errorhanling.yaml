@@ -4,12 +4,12 @@
   become: yes 
   tasks:
   - name: verify whether user exist or not
-    ansible.builtin.command: id roboshop
+    ansible.builtin.command: id devsecops
     register: output
     ignore_errors: true
 
   - name: create users 
-    ansible.builtin.command: useradd devops
+    ansible.builtin.command: useradd devsecops
     when: output.rc != 0
 
   - name: user already exists
