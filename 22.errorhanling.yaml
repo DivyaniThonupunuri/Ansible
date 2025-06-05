@@ -9,7 +9,7 @@
     ignore_errors: true
 
   - name: create users 
-    ansible.builtin.command: useradd roboshop
+    ansible.builtin.command: useradd devops
     when: output.rc != 0
 
   - name: user already exists
