@@ -1,0 +1,12 @@
+- name: private key authentication
+  hosts: keys
+  become: yes 
+  tasks:
+  - name: ping the server
+    ansible.builtin.ping:
+
+  - name: install nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: installed
+    
